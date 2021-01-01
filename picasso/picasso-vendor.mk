@@ -248,7 +248,6 @@ PRODUCT_PACKAGES += \
     colorservice \
     datastatusnotification \
     embms \
-    imssettings \
     WfdService \
     dpmserviceapp \
     ims \
