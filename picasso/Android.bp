@@ -41,6 +41,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "PerformanceMode",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -77,6 +88,17 @@ android_app_import {
 	name: "embms",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/embms/embms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "workloadclassifier",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -142,6 +164,24 @@ dex_import {
 	name: "tcmclient",
 	owner: "xiaomi",
 	jars: ["proprietary/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "QPerformance",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/QXPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
 }
 
 dex_import {
