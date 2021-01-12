@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
-    vendor/xiaomi/picasso/proprietary/system_ext/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-common.jar \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
@@ -72,9 +71,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-perfd-client_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-util_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_performance.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrcamera_client.qti.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_client.qti.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libupdateprof.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdaac.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
@@ -139,7 +135,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.latency@2.0.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -159,7 +154,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libQOC.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libQOC.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -175,11 +169,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-perfd-client_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqti-util_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-util_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_performance.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrcamera_client.qti.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_client.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libsd_sdk_display.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsd_sdk_display.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libupdateprof.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
@@ -237,7 +228,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.latency@2.0.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/xiaomi/picasso/proprietary/product/vendor_overlay/30/lib/libspl.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/libspl.so \
     vendor/xiaomi/picasso/proprietary/product/vendor_overlay/30/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/soundfx/libvolumelistener.so \
     vendor/xiaomi/picasso/proprietary/product/vendor_overlay/30/lib64/libspl.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/libspl.so \
