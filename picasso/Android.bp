@@ -411,12 +411,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "WfdCommon",
-	owner: "xiaomi",
-	jars: ["proprietary/framework/WfdCommon.jar"],
-}
-
-dex_import {
 	name: "QPerformance",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/QPerformance.jar"],
@@ -432,6 +426,12 @@ dex_import {
 	name: "UxPerformance",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/UxPerformance.jar"],
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/WfdCommon.jar"],
 }
 
 dex_import {
