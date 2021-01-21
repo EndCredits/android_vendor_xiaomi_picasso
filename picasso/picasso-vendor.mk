@@ -104,6 +104,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib/libmwqemiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmwqemiptablemgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_cci_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_encdec_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqspmsvc.so \
@@ -114,7 +115,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_performance.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libqti_workloadclassifiermodel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_workloadclassifiermodel.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libskewknob_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libskewknob_system.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib/libslmiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libslmiptablemgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libsmomo.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsmomo.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libtrigger-handler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtrigger-handler.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libupdateprof.qti.so \
@@ -274,6 +274,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libmsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmsp.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libmwqemiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmwqemiptablemgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_cci_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_encdec_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqspmsvc.so \
@@ -286,7 +287,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libsd_sdk_display.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsd_sdk_display.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libskewknob_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libskewknob_system.so \
-    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libslmiptablemgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libslmiptablemgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libsmomo.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsmomo.qti.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libtrigger-handler.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtrigger-handler.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libupdateprof.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libupdateprof.qti.so \
