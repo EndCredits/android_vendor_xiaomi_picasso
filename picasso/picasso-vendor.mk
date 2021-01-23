@@ -399,6 +399,7 @@ PRODUCT_PACKAGES += \
     libvraudio \
     vendor.qti.hardware.alarm@1.0 \
     libqct_resampler \
+    SoterService \
     CallFeaturesSetting \
     PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \

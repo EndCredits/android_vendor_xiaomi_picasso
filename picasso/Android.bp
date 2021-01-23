@@ -63,6 +63,16 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "SoterService",
+	owner: "xiaomi",
+	apk: "proprietary/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "CallFeaturesSetting",
 	owner: "xiaomi",
 	apk: "proprietary/product/app/CallFeaturesSetting/CallFeaturesSetting.apk",
