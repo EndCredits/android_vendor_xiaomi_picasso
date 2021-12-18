@@ -7,29 +7,48 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
+    vendor/xiaomi/picasso/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
+    vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/xiaomi/picasso/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
     vendor/xiaomi/picasso/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
+    vendor/xiaomi/picasso/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
+    vendor/xiaomi/picasso/proprietary/system_ext/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-common.jar \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmframework.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmtcm.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
     vendor/xiaomi/picasso/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
+    vendor/xiaomi/picasso/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/xiaomi/picasso/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/picasso/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/picasso/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/xiaomi/picasso/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
     vendor/xiaomi/picasso/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/picasso/proprietary/vendor/bin/feature_enabler_client:$(TARGET_COPY_OUT_VENDOR)/bin/feature_enabler_client \
     vendor/xiaomi/picasso/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
@@ -39,22 +58,59 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.iop@2.0-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@2.2-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service \
     vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.secure_element@1.2-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
     vendor/xiaomi/picasso/proprietary/vendor/bin/init.qti.chg_policy.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.chg_policy.sh \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/xiaomi/picasso/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/xiaomi/picasso/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
     vendor/xiaomi/picasso/proprietary/vendor/bin/mlid:$(TARGET_COPY_OUT_VENDOR)/bin/mlid \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
     vendor/xiaomi/picasso/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/xiaomi/picasso/proprietary/vendor/bin/npu_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/npu_launcher \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/xiaomi/picasso/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
     vendor/xiaomi/picasso/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/qmipriod:$(TARGET_COPY_OUT_VENDOR)/bin/qmipriod \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/xiaomi/picasso/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/xiaomi/picasso/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/sscrpcd:$(TARGET_COPY_OUT_VENDOR)/bin/sscrpcd \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
+    vendor/xiaomi/picasso/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/xiaomi/picasso/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
     vendor/xiaomi/picasso/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/xiaomi/picasso/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
@@ -163,17 +219,38 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service-qti.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mi_thermald.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-service.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
@@ -182,9 +259,29 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@2.2-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/picasso/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml \
@@ -213,7 +310,152 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/etc/qdcm_calib_data_xiaomi_36_02_0c_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_36_02_0c_video_mode_dsc_dsi_panel.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml \
     vendor/xiaomi/picasso/proprietary/vendor/etc/qdcm_calib_data_xiaomi_37_02_0b_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_37_02_0b_video_mode_dsc_dsi_panel.xml \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/picasso/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/ak991x_dri_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi26x_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/icm4x6xx_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sm7250_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7250_ak991x_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sm7250_bmi26x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7250_bmi26x_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sm7250_icm4x6xx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7250_icm4x6xx_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sm7250_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7250_lsm6dso_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sm7250_stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7250_stk3x3x_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sm7250_tsl2560.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7250_tsl2560.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_aod.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aod.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_ccd_v2_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v2_walk.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_ccd_v3_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_walk.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_mag_cal_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal_legacy.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_nonui.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_nonui.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/stk3x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/stk3x3x_0.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/config/tsl2560.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tsl2560.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/qti_gravity.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_accel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_accel_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_accel_cal.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_activity_recognition.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_activity_recognition.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ambient_light.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_light.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ambient_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ambient_temperature.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_amd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_amd.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_aont.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_aont.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_async_com_port.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_ttw.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_walk.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_client.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_client.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_cmc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmc.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_cmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cmd.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_da_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_da_test.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_dae.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dae.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_data_acquisition_engine.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_data_acquisition_engine.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_device_mode.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_mode.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_facing.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_facing.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_fmv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fmv.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_formatter.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_formatter.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_free_fall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_free_fall.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_fw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_fw.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_game_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_game_rv.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_geomag_rv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_geomag_rv.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gravity.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_gyro.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_gyro_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_cal.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_gyro_rot_matrix.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_gyro_rot_matrix.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_hall.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hall.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_har.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_har.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_heart_beat.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_beat.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_heart_rate.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_heart_rate.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_hinge_angle.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_hinge_angle.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_humidity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_humidity.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_interrupt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_interrupt.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_mag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_mag_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mag_cal.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_mcmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_mcmd.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_motion_detect.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_multishake.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_oem3.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem3.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_pedometer_wrist.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer_wrist.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_oem_config.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_oem_config.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_physical_sensor_test.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_physical_sensor_test.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_pose_6dof.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pose_6dof.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ppg.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ppg.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_pressure.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pressure.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_proximity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_proximity.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_psmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_psmd.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_registry.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_registry.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_remote_proc_state.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_remote_proc_state.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_resampler.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_resampler.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_rgb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rgb.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_rmd.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rmd.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_rotv.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_rotv.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_sar.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sar.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_sensor_temperature.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sensor_temperature.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_sig_motion.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sig_motion.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_signal_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_signal_sensor.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_sim.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_sim_legacy.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_sim_legacy.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_std.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_std_event_gated_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_event_gated_sensor.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_std_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_sensor.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_std_type.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_std_type.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_step_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_step_detect.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_suid.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_suid.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_thermopile.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_thermopile.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_threshold.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_threshold.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_tilt.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_tilt_to_wake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_tilt_to_wake.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_timer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_timer.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-arvr.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
+    vendor/xiaomi/picasso/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/picasso/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/a620_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a620_zap.b00 \
@@ -237,7 +479,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/xiaomi/picasso/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
-    vendor/xiaomi/picasso/proprietary/vendor/lib:$(TARGET_COPY_OUT_VENDOR)/lib \
     vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.sensor.picasso_wide_ov48b2q.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensor.picasso_wide_ov48b2q.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.picasso_sunny_wide_ov48b2q.bin \
     vendor/xiaomi/picasso/proprietary/vendor/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.picasso_48m_sunny_front_depth_gc02m1_mono.bin \
@@ -326,9 +567,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -341,6 +586,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
@@ -359,17 +605,48 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpu.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfconfig.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfioctl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
@@ -380,6 +657,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeybox.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
@@ -434,6 +712,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib/vndk/libxlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/vndk/libxlog.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/android.hardware.secure_element@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0-impl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/com.qti.eeprom.picasso_front_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.picasso_front_depth.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/com.qti.eeprom.picasso_front_depth_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.picasso_front_depth_mono.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/camera/com.qti.eeprom.picasso_rear_depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.eeprom.picasso_rear_depth.so \
@@ -565,6 +844,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qti.feature2.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.stub.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qti.feature2.swmf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.swmf.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/deviceInfoServiceModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModule.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
@@ -588,13 +875,34 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/jcos_nq_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/jcos_nq_client.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsdpl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsqimf.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcs-v2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsrcsbaseimpl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtcore.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsxml.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-rcsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rcsconfig.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcommon.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-siputility.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-uceservice.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libHalSuperSensorServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHalSuperSensorServer.so \
@@ -619,6 +927,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
@@ -688,10 +997,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libcvp_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvp_common.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libcvpcpuRev_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvpcpuRev_skel.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
@@ -700,8 +1011,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_optical_zoom_control.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libdualcam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_video_optical_zoom.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libfocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfocus.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libft2vendor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
@@ -721,6 +1035,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libhydra_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra_common.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
@@ -730,6 +1049,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/liblearningmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblearningmodule.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
@@ -741,8 +1061,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegface.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmeters-ns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters-ns.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmeters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeters.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmialgo_ie_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_capture.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmialgo_ie_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_ie_preview.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmialgo_image_colourkeeping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_image_colourkeeping.so \
@@ -754,29 +1078,81 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmibokeh_712.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_712.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmibokeh_845_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_845_video.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libmodemapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmodemapi.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmulticam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_optical_zoom_control.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libmulticam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulticam_video_optical_zoom.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libnanopb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnanopb.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_rmnet_ext.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libnotifyaudiohal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnotifyaudiohal.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libnpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpu.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/liboemaids_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemaids_vendor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libos.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libperfconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfconfig.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_cci.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_helper.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_qmux.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csvt_srvc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqti-iopd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd-client.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqti-iopd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-iopd.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd-client.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-perfd.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-logger.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
@@ -785,12 +1161,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnpe_adsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_adsp.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnpe_dsp_domains.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnpe_dsp_domains_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_system.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnpe_dsp_domains_v2_system.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2_system.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libssccalapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssccalapi.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssrec.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libst_soft_isp_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libst_soft_isp_shared.so \
@@ -800,30 +1188,49 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsymphony-cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-cpu.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libultrasound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrasound.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libvideoBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideoBokeh.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libvideofilter_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideofilter_only.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libvpphcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphcp.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libxmi_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/ls_nq_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ls_nq_client.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/se_nq_extn_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/se_nq_extn_client.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.elliptic.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/sensors.touch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/unnhal-acc-hvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hvx.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
@@ -864,16 +1271,82 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
-    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
+    vendor/xiaomi/picasso/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    libfastcvopt \
+    libthermalclient \
     CneApp \
     IWlanService \
+    TimeService \
     com.qualcomm.qti.gpudrivers.lito.api30 \
     PowerOffAlarm \
+    QtiTelephonyService \
     dpmserviceapp \
+    ims \
+    qcrilmsgtunnel \
     android.hardware.gnss@2.1-service-qti \
+    android.hardware.neuralnetworks@1.3-service-qti-hta \
+    android.hardware.neuralnetworks@1.3-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_vendor.xiaomi.hardware.mlipay \
     vendor.qti.gnss@4.0-service
