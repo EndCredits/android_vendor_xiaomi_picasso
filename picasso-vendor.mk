@@ -6,8 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/picasso
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/picasso/proprietary/product/etc/permissions/qti_telephony_hidl_wrapper_prd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_hidl_wrapper_prd.xml \
-    vendor/xiaomi/picasso/proprietary/product/etc/permissions/qti_telephony_utils_prd.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/qti_telephony_utils_prd.xml \
     vendor/xiaomi/picasso/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/xiaomi/picasso/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/picasso/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -404,7 +402,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_motion_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_motion_detect.proto \
     vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_multishake.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_multishake.proto \
     vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_oem1.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem1.proto \
-    vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_oem2.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem2.proto \
     vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_oem3.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_oem3.proto \
     vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_offbody_detect.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_offbody_detect.proto \
     vendor/xiaomi/picasso/proprietary/vendor/etc/sensors/proto/sns_pedometer.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_pedometer.proto \
