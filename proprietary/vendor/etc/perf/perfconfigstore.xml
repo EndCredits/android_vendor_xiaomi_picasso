@@ -33,6 +33,7 @@ ________________________________________________________________________________
 
                 <!--Vendor Properties -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.iop.enable_iop" Value="0" />
                 <Prop Name="vendor.iop.enable_uxe" Value="0" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="0" />
